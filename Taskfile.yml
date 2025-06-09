@@ -1,0 +1,6 @@
+version: '3'
+
+tasks:
+  cover:
+    cmds:
+      - go test ./... -cover -coverprofile=coverage.out && go tool cover -html=coverage.out
