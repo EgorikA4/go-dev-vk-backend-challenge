@@ -3,8 +3,6 @@
 **Тема:** Примитивный динамический worker-pool на Go с возможностью добавления и удаления воркеров в рантайме.  
 Входные данные — строки в канал, воркеры обрабатывают их (выводят номер воркера и саму строку).
 
----
-
 ## Структура проекта
 ```
 ├── README.md
@@ -24,21 +22,19 @@
             └── worker_test.go — unit-тесты для основных сценариев.
 ```
 
----
-
 ## Установка и запуск
 
 1. **Склонируйте репозиторий**  
    ```bash
-   git clone https://github.com/you/myworkerpool.git
-   cd myworkerpool
+   git clone https://github.com/EgorikA4/go-dev-vk-backend-challenge.git
+   cd go-dev-vk-backend-challenge
    ```
 
 2. **Соберите двоичный файл**
 
    ```bash
    go mod tidy
-   go build -o bin/workerpool-cli ./cmd/workerpool-cli
+   go build -o workerpool ./cmd
    ```
 
 3. **Запустите CLI-демо**
